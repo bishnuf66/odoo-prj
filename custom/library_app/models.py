@@ -2,15 +2,15 @@ from odoo import models, fields, api
 
 class Book(models.Model):
     _name = "library.book"
-    _discription= "Book"
-    _order="name,date_pulished desc"
-    _recname="name"
-    _table="library_books"
-    _log_access=True
-    _auto=True
+    _discription = "Book"
+    _order = "name,date_pulished desc"
+    _recname = "name"
+    _table = "library_books"
+    _log_access = True
+    _auto = True
 
-
-    name = fields.Char("ISBN")
+    name = fields.Char("Title",default=None, help ="book cover title.",readonly=False,required=True,index=True,copy=False,deprecated=True,groups="",states={})
+    isbn = fields.Char("ISBN")
     book_type =fields.Selection(
         [("paper","paperback"),
          ("hard","hardcover"),
@@ -19,13 +19,13 @@ class Book(models.Model):
          "Type")
     notes = fields.Integer(default=1)
     descr = fields.Float("Average Rating",(3,2))
-    price=fields.Monetary("price","current_id")
+    price=fields.Monetary("price","currency_id")
 
 
 
     currency_id = fields.Many2one("res.currency")
 
     date_published = fields.Date()
-    last_burrow_date = fields.Datetime()(
+    last_burrow_date = fields.Datetime(
         "last Burrowed on",
         default=lambda self: fields.Datetime.now())

@@ -8,10 +8,6 @@
     'application':True,
     'data':[
         'security/ir.model.access.csv',
-        'views/library_menu.xml'
-        
-    ]
-    
-    
-
+        'views/library_menu.xml',
+    ],
 }
