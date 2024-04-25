@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+
+
+
+ <record id="action_student" model="ir.actions.act_window">
+        <field name="name">Students</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">school.student</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+
+  <record id="student_admission_form" model="ir.ui.view">
+        <field name="name">student.admission.form</field>
+        <field name="model">school.student</field>
+        <field name="arch" type="xml">
+
+            <form string="Student">
+
+               <sheet>
+               <group>
+               <field name="name"/>
+                <field name="class_id"/>
+                <field name="section_id"/>
+                <field name="address"/>                      
+              <field name="guardian_contact"/>
+                <field name="gender"/>
+                <field name="age"/>
+               </group>
+               </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="student_form_tree" model="ir.ui.view">
+        <field name="name">student.admission.tree</field>
+        <field name="model">school.student</field>
+        <field name="arch" type="xml">
+                <tree>
+                     <field name="name"/>
+                    <field name="class_id"/>
+                    <field name="section_id"/>
+                    <field name="address"/>
+                    <field name="guardian_contact"/>
+                    <field name="gender"/>
+                    <field name="age"/>
+                </tree>   
+        </field>
+    </record>
+
+   
+</odoo>

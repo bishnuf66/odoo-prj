@@ -10,6 +10,8 @@
     "data":[
         "security/ir.model.access.csv",
         "views/school.xml",
+        "views/student.xml",
+        "views/teachers.xml",
     ],  
     "installable":True,
 }
