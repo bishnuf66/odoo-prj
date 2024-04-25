@@ -1,37 +1,34 @@
 <odoo>
-
-    <record  id="school_student_form_view" model="ir.ui.view">
-    <field name ="name">school.student.form</field>
-    <field name ="model">school.student</field>
-    <field name = "arch" type ="xml">
-
-        <form string="student">
-             <sheet>
-
-             <group>
-                <field  name="name"/>
-                <field name="class_id"/>
-                <field name="section_id">
-                <field name="address">
-                <field name="guardian_contact">
-            </group>
-
-            </sheet>
+    <record id="school_form_view" model="ir.ui.view">
+        <field name="name">school.student.form</field>
+        <field name="model">school.student</field>
+        <field name="arch" type="xml">
+            <form string="Student">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="class_id"/>
+                        <field name="section_id"/>
+                        <field name="address"/>
+                        <field name="guardian_contact"/>
+                    </group>
+                </sheet>
             </form>
-            </field>
-            </record>
+        </field>
+    </record>
 
+    <record id="action_student" model="ir.actions.act_window">
+        <field name="name">Students</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">school.student</field>
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="view_id" ref="school_form_view"/>
+        <field name="context">{"create": true}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create student details</p>
+        </field>
+    </record>
 
-    <record id="action_student" model="ir.action.act_window">
-    <field name ="name">student</field>
-    <field name="res">kanban,tree,form</field>
-    <p class="o_view_nocontent_smiling_face">
-    Create student details
-    </p>
-    </field>
-    </record> 
-
-    <menuitem id= "school_menu" name="school"/>
-    <maneuitem id= "school_student_menu" parent="school_menu" name="school" action="action_student" sequence="6"/>
-
+    <menuitem id="school_menu" name="School"/>
+    <menuitem id="school_student_menu" parent="school_menu" name="Students" action="action_student" sequence="6"/>
 </odoo>

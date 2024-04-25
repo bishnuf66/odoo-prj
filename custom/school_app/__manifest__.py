@@ -6,7 +6,7 @@
     "application":True,
     "version":"1.0.0",
     "depends":["base"],
-    "catagory":"Services/sschool",
+    "category":"Services/school",
     "data":[
         "security/ir.model.access.csv",
         "views/school.xml",
