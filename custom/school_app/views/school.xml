@@ -1,6 +1,6 @@
 <odoo>
 
-    <record  id="school_class_form_view" model="ir.ui.view">
+    <record  id="school_student_form_view" model="ir.ui.view">
     <field name ="name">school.student.form</field>
     <field name ="model">school.student</field>
     <field name = "arch" type ="xml">
@@ -26,7 +26,7 @@
     <field name ="name">student</field>
     <field name="res">kanban,tree,form</field>
     <p class="o_view_nocontent_smiling_face">
-    Create school details
+    Create student details
     </p>
     </field>
     </record> 
