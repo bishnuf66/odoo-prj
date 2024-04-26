@@ -5,10 +5,11 @@
     "author":"bishnu bk",
     "application":True,
     "version":"1.0.0",
-    "depends":["base"],
+    "depends":["base","mail"],
     "category":"Services/school",
     "data":[
         "security/ir.model.access.csv",
+        "data/sequence.xml",
         "views/school.xml",
         "views/student.xml",
         "views/teachers.xml",
