@@ -6,7 +6,8 @@ class Student (models.Model):
     _name = 'school.student'
     _description = 'store information of students'
     _inherit = ['mail.thread']
-    
+
+    active = fields.Boolean(default=True)
     student_id = fields.Integer(string="ID", tracking=True) 
     name = fields.Char( string = "Student name", tracking=True)
     age = fields.Integer(string="age" ,tracking=True)
@@ -18,7 +19,11 @@ class Student (models.Model):
     gender = fields.Selection([('male','male'),('femlae','female'),('others','others')])
     capitalized_name = fields.Char(string='capitalised Name',compute="compute_field_name",store = True)
     ref = fields.Char(string="reference",default=lambda self:_('SN'))
-
+    parents_id = fields.Many2one("school.parents" ,string="parents")
+    
+    
+    teacher_ids =fields.Many2many('school.teachers', string="teacher")
+    
 
 
     @api.model_create_multi

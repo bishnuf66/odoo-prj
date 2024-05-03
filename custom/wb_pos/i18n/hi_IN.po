@@ -1,0 +1,109 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* wb_pos
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-30 11:05+0000\n"
+"PO-Revision-Date: 2024-04-30 11:05+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+ 
+#. module: wb_pos
+#. odoo-javascript
+#: code:addons/wb_pos/static/src/js/wb_sample_button.js:0
+#, python-format
+msgid "Error Message"
+msgstr "त्रुटि संदेश"
+
+#. module: wb_pos
+#. odoo-javascript
+#: code:addons/wb_pos/static/src/js/wb_sample_button.js:0
+#, python-format
+msgid "MY BUTTON"
+msgstr "मेरा बटन"
+
+
+
+#. module: wb_pos
+#. odoo-javascript
+#: code:addons/wb_pos/static/src/xml/wb_sample_button.xml:0
+#, python-format
+msgid "The simple Error message screen"
+msgstr "सरल त्रुटि संदेश स्क्रीन"
+
+#. module: wb_pos
+#. odoo-javascript
+#: code:addons/wb_pos/static/src/xml/wb_sample_button.xml:0
+#, python-format
+msgid "WB Sample_button"
+msgstr "डब्ल्यूबी नमूना_बटन"
+
+#. module: wb_pos
+#. odoo-javascript
+#: code:addons/wb_pos/static/src/xml/wb_sample_button.xml:0
+#, python-format
+msgid "sample_button"
+msgstr "नमूना_बटन"
+
+#. module: wb_pos
+#. odoo-javascript
+#: code:addons/wb_pos/static/src/xml/wb_sample_button.xml:0
+#, python-format
+msgid "this is a error message."
+msgstr "नवह एक त्रुटि संदेश है."
+
+#. module: wb_pos
+#. odoo-javascript
+#: code:addons/wb_pos/static/src/xml/wb_sample_button.xml:0
+#, python-format
+msgid "confirm popup"
+msgstr "पॉपअप की पुष्टि करें"
+
+#. module: wb_pos
+#. odoo-javascript
+#: code:addons/wb_pos/static/src/xml/wb_sample_button.xml:0
+#, python-format
+msgid "are you sure want to continue?"
+msgstr "क्या आप वाकई जारी रखना चाहते हैं?"
+
+#. module: wb_pos
+#. odoo-javascript
+#: code:addons/wb_pos/static/src/xml/wb_sample_button.xml:0
+#, python-format
+msgid "yes"
+msgstr "हाँ"
+
+#. module: wb_pos
+#. odoo-javascript
+#: code:addons/wb_pos/static/src/xml/wb_sample_button.xml:0
+#, python-format
+msgid "no"
+msgstr "नहीं"
+
+#. module: wb_pos
+#. odoo-javascript
+#: code:addons/wb_pos/static/src/xml/wb_sample_button.xml:0
+#, python-format
+msgid "odoo Error"
+msgstr "ओडू त्रुटि"
+
+#. module: wb_pos
+#. odoo-javascript
+#: code:addons/wb_pos/static/src/xml/wb_sample_button.xml:0
+#, python-format
+msgid "this is a test popup don't panic"
+msgstr "यह एक परीक्षण पॉपअप है, घबराएं नहीं"
+
+#. module: wb_pos
+#. odoo-javascript
+#: code:addons/wb_pos/static/src/xml/wb_sample_button.xml:0
+#, python-format
+msgid "not sure"
+msgstr "निश्चित नहीं"

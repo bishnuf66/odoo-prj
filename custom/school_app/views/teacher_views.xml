@@ -1,0 +1,60 @@
+
+<odoo>
+
+ <record id="action_teachers" model="ir.actions.act_window">
+        <field name="name">teachers</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">school.teachers</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+
+
+  <record id="parents_form" model="ir.ui.view">
+        <field name="name">teachers.form</field>
+        <field name="model">school.teachers</field>
+        <field name="arch" type="xml">
+
+            <form>
+               <sheet>
+            <button  name="bishnu" icon="fa-address-book-o" type="object" string="special-command"/>
+            <button  name="bishnu1" icon="fa-snowflake-o" type="object" string="special-command2"/>
+            <button name="" string="" type="" state=""/>
+            
+               <field name="name"/>
+               
+               <field name="mycurrency_id"/>
+               <field name="salary"/>
+               <field name="binaryfield" filename="binaryfilename"/>
+                <field name="binaryfilename" />   
+                <field name="imagefield" widget="image" class="oe_avatar"/> 
+               <field name="binarymultifield" widget="many2many_binary"/>
+               
+               </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="parents_tree" model="ir.ui.view">
+        <field name="name">teachers.tree</field>
+        <field name="model">school.teachers</field>
+        <field name="arch" type="xml">
+                <tree>
+                <header>
+                <button name="headerbtn" string= "headerbuttoneg" type="object"/>
+                <button name="appointment" string=" launch appmnt wzrd"  type="object"/>
+                </header>
+
+                    <field name="name"/> 
+                    <field name="mycurrency_id"/>
+                    <field name ="salary"/>
+                    <field name="binaryfield" filename="binaryfilename"/>     
+                     <field name="binaryfilename"/>   
+                    <field name="imagefield" widget="image" class="oe_avatar"/>   
+                   
+               </tree>   
+        </field> 
+        </record>
+
+</odoo>

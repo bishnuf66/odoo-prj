@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-
 <odoo>
-    <menuitem id="school_menu_root" name="School"/>
-    <menuitem id="school_admission" parent="school_menu_root" name="Admission" action="" sequence="10"/>
-    <menuitem id="school_student_menu" parent="school_admission" name="Students" action="action_student" sequence="10"/>
-    <menuitem id="school_teachers_menu" parent="school_menu_root" name="Teachers" sequence="10 "/>
-</odoo>
+    <menuitem id="school_menu_root" name="School"
+     />
+        <menuitem id="school_admission" parent="school_menu_root" name="Admission" action="" sequence="10"/>
+        <menuitem id="school_student_menu" parent="school_admission" name="Students" action="action_student" sequence="9"/>
+
+
+        <menuitem id="school_parent_menu" parent = "school_menu_root" name="parents" action="action_parents" sequence="8"/>
+
+
+        <menuitem id="teacher_menu" parent = "school_menu_root" name="teacher" action="action_teachers"/>
+        <menuitem id="appointment_menu" parent="school_menu_root" name="appointment" />
+
+        <menuitem id="menu_create_appointment" parent="appointment_menu" name="create appointment" action="action_create_appointment"/>
+
+
+
+    </odoo>
+

@@ -1,2 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access.school.student,school.student,model_school_student,base.group_user,1,1,1,1
+access.parents,school.parents,model_school_parents,base.group_user,1,1,1,1
+access.teachers,school.teachers,model_school_teachers,base.group_user,1,1,1,1
+access.wizard,create.appointment,model_create_appointment_wizard,base.group_user,1,1,1,1

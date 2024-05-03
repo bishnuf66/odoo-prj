@@ -1,0 +1,10 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/kali/odoo-files/odoo",
+        "/home/kali/odoo-files/odoo/odoo"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/kali/odoo-files/odoo",
+        "/home/kali/odoo-files/odoo/odoo"
+    ],
+}
