@@ -17,6 +17,8 @@
 
             <form>
                <sheet>
+            <button name="headerbtn" string= "headerbuttoneg" type="object"/>
+            <button name="appointment" string=" launch appmnt wzrd"  type="object"/>
             <button  name="bishnu" icon="fa-address-book-o" type="object" string="special-command"/>
             <button  name="bishnu1" icon="fa-snowflake-o" type="object" string="special-command2"/>
             <button name="" string="" type="" state=""/>
@@ -41,10 +43,7 @@
         <field name="model">school.teachers</field>
         <field name="arch" type="xml">
                 <tree>
-                <header>
-                <button name="headerbtn" string= "headerbuttoneg" type="object"/>
-                <button name="appointment" string=" launch appmnt wzrd"  type="object"/>
-                </header>
+               
 
                     <field name="name"/> 
                     <field name="mycurrency_id"/>

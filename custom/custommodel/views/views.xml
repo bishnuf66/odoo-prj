@@ -1,0 +1,37 @@
+<odoo>
+
+<menuitem id="custom_menu" name="custom menu" action="bishnu" sequence="100"/>
+<menuitem id="custom_menu1" name="custom menu1" parent="custom_menu"/>
+
+
+<record id="bishnu" model="ir.actions.act_window">
+<field name="name">hahahahahahah</field>
+<field name="res_model">custom.products</field>
+<field name="view_mode">tree,form</field>
+</record>
+
+<record id="bishnuform" model="ir.ui.view">
+<field name="name">bishnuform</field>
+<field name="model">custom.products</field>
+<field name="arch" type="xml">
+<form>
+<field name="name"/>
+<field name="volume"/>
+<field name="display_name"/>
+</form>
+</field>
+</record>
+
+<record id="bishnutree" model="ir.ui.view">
+<field name="name">bishnutree</field>
+<field name="model">custom.products</field>
+<field name="arch" type="xml">
+<tree>
+<field name="name"/>
+<field name="volume"/>
+<field name="display_name"/>
+</tree>
+</field>
+</record>
+
+</odoo>

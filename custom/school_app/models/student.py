@@ -9,7 +9,7 @@ class Student (models.Model):
 
     active = fields.Boolean(default=True)
     student_id = fields.Integer(string="ID", tracking=True) 
-    name = fields.Char( string = "Student name", tracking=True)
+    name = fields.Char( string = "Student name", tracking=True,required=True)
     age = fields.Integer(string="age" ,tracking=True)
     is_child = fields.Boolean(string ="is child",tracking=True)
     class_id =  fields.Integer(string='Class', tracking=True)

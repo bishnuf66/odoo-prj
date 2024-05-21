@@ -6,7 +6,7 @@ class Teachers (models.Model):
     _description = 'store information of parents'
     
 
-    name = fields.Char( string = "Teachers name",help="please insert your name")
+    name = fields.Char( string = "Teachers name",help="please insert your name", required=True)
     binaryfield = fields.Binary(string="upload")
     
     binaryfilename=fields.Char(string="binaryfile")
@@ -26,17 +26,15 @@ class Teachers (models.Model):
     
     
     @api.model
-    def bishnu(self):
-        # Your action logic for bsihnu
-        pass
+    def bishnu(self,arg1):
+        pass       
 
     @api.model
-    def bishnu1(self):
-        # Your action logic for bishnu1
-        pass
+    def bishnu1(self,arg1):
+       pass
     
     @api.model
-    def headerbtn(self):
+    def headerbtn(self,arg1):
         return{
             "name":"openwizard",
             "res_model":"create.appointment.wizard",
@@ -46,7 +44,7 @@ class Teachers (models.Model):
         
     
     @api.model
-    def appointment(self):
+    def appointment(self,arg1):
         action = self.env.ref('school_app.action_create_appointment')
         return action
 

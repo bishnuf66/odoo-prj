@@ -7,8 +7,8 @@ class Parents (models.Model):
     _rec_name = 'contact'
     
     
-    name = fields.Char( string = "Parents name", tracking=True)
-    contact =fields.Integer(string='Parents/Guardian Contact', tracking=True)
+    name = fields.Char( string = "Parents name", tracking=True,required=True, website_form_blacklisted=False)
+    contact =fields.Integer(string='Parents/Guardian Contact', tracking=True, website_form_blacklisted=True)
     address = fields.Char(string = "Address")
     gender = fields.Selection([('male','male'),('femlae','female'),('others','others')])
    
